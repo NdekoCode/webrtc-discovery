@@ -9,7 +9,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "simple-peer": "^9.11.1"
-  }
+  "dependencies": {}
 }
