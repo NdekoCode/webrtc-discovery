@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const btn = document.querySelector("#start");
+  const btnStart = document.querySelector("#start");
   /**Will be called on succed si l'utilisateur accepte l'utilisation du micro et de la webcam */
   const onSuccess = (stream) => {
     const senderVideo = document.getElementById("sender-video");
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     video: true,
     audio: true,
   };
-  btn.addEventListener("click", () => {
+  btnStart.addEventListener("click", () => {
     navigator.getUserMedia(params, onSuccess, onError);
   });
 });
