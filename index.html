@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+
+
+
+    <title>web Rtc</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"> webRTC </a>
+    </nav>
+    <!-- les sections du chat -->
+    <div class="container">
+        <div class="row">
+
+
+
+            <div class="col-sm-6">
+                <h2>ReceptstartPeerion</h2>
+                <video controls id="receiver-video" width="100%" height="400px"></video>
+                <p>
+                    <button id="receive" class="btn btn-default">Recevoir la conversation</button>
+                </p>
+                <form action="#" id="incoming">
+                    <div class="form-group">
+                        <textarea class="form-control" id="text"></textarea>
+                    </div>
+                    <p>
+                        <button type="submit">Enregistrer l'offre</button>
+                    </p>
+                </form>
+            </div>
+
+            <div class="col-sm-6">
+                <h2>Envoi</h2>
+                <video controls id="emitter-video" width="100%" height="400px"></video>
+                <p>
+                    <button id="start" class="btn btn-primary">Demarer la conversation</button>
+                </p>
+                <textarea id="offer" class="form-control"></textarea>
+
+            </div>
+
+
+        </div>
+
+        <div class="messages">
+            <p> Nous n avons pas pu trouvé les infos de votre contact</p>
+        </div>
+
+
+    </div>
+
+
+
+
+    <script src="./assets/js/simple-peer.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
